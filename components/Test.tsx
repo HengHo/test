@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 // ************************************************************************************************* 4
@@ -25,7 +26,7 @@ export const Test5 = () => {
 export const Test6 = () => {
     return (
       <>
-        <img src="/images/erd.png" alt="" />
+        <Image src="/images/erd.png" alt="" />
       </>
     );
   };
