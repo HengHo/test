@@ -95,19 +95,6 @@ function probability(successWays: number, totalWays: number) {
   return successWays / totalWays;
 }
 
-function probabilityFruit(): string {
-  const orange = 6,
-    mangosteen = 3,
-    mango = 1;
-  const totalFruits = orange + mangosteen + mango;
-
-  const totalWays =
-    (totalFruits * (totalFruits - 1) * (totalFruits - 2)) / (3 * 2 * 1);
-  const successWays = orange * mangosteen * mango;
-  return `ความน่าจะเป็นคือ ${successWays}/${totalWays} หรือ ${
-    probability(successWays, totalWays) * 100
-  }%`;
-}
 
 export const Test10 = () => {
   const orange = 6,
